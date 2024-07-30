@@ -228,21 +228,21 @@ main .viewMore a:hover {
 }
 
 /* Section Content */
-#about, #education, #skills, #project, #contact {
+#about, #skills, #project, #contact {
   text-align: center;
   color: var(--mainColor);
   padding: 3.5em 1em 0.5em;
 }
 
-#about .about-header, #education .education-header, #skills .skills-header, #project .project-header, #contact .contact-header {
+#about .about-header, #skills .skills-header, #project .project-header, #contact .contact-header {
   margin: 10px auto;
 }
 
-#about h1, #education h1, #skills h1, #project h1, #contact h1 {
+#about h1, #skills h1, #project h1, #contact h1 {
   font-size: 1.6em;
 }
 
-#about p, #education p , #skills p, #project p, #contact p{
+#about p, #skills p, #project p, #contact p{
   font-size: 1.1em;
 }
 
@@ -282,54 +282,6 @@ main .viewMore a:hover {
 
 #about .introduce span i {
   font-size: 1.5em;
-}
-
-/* Education */
-#education .education-content {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-#education .card-education {
-  overflow: hidden;
-  border-radius: 30px;
-  text-align: center;
-  font-size: 1.2em;
-  color: var(--mainColor);
-  width: 250px;
-  box-shadow: 0px 1px 3px .2px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s;
-}
-
-#education .card-education:hover {
-  transform: translateY(-8px);
-}
-
-#education .card-header {
-  background-color: rgba(212, 217, 221, 0.3);
-  width: 100%;
-  padding: 0.7em 1em;
-}
-#education .card-content {
-  padding: 0.2em 2.3em 0;
-}
-
-
-#education figure img {
-  width: 150px;
-}
-
-#education .education-name {
-  background-color: rgba(212, 217, 221, 0.3);
-  padding: 0.7em 1em;
-}
-
-#education .card-education:hover .card-header, #education .card-education:hover .education-name {
-  background-color: rgba(212, 217, 221, 0.5);
 }
 
 /* Skills */
@@ -646,7 +598,7 @@ footer .footer-name a:hover {
   }
 
   /* Section Content */
-  #about, #education, #skills, #project, #contact {
+  #about, #skills, #project, #contact {
     padding: 4.2em 1.6em 0;
     font-size: 1.15em;
   }
@@ -679,23 +631,6 @@ footer .footer-name a:hover {
   
   #about .introduce span i {
     font-size: 2em;
-  }
-
-  /* Education */
-  #education {
-    padding-bottom: 2em;
-  }
-  #education .education-content {
-    min-height: 420px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    font-size: 0.9em;
-  }
-
-  #education .card-education {
-    width: 270px;
   }
 
   /* Skills */
