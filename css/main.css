@@ -293,11 +293,12 @@ main .viewMore a:hover {
   padding: 2em 0 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.8em;
 }
 
 #skills .skill-wrapper {
-  width: 100%;
+  max-width: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
@@ -641,12 +642,13 @@ footer .footer-name a:hover {
   }
 
   #skills .skill-wrapper {
-    width: 40%;
+    width: auto;
+    max-width: 40%;
   }
 
   #skills .experience-wrapper {
     width: 40%;
-    align-items: inherit;
+    align-items: stretch;
   }
 
   #skills .card-experience {
