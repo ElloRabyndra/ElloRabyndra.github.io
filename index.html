@@ -1,251 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Ello Rabyndra</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="asset/logoPorto.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+    />
+  </head>
 
-<head>
-  <title>Ello Rabyndra</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="asset/logoPorto.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
-</head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <li class="topMenu">
+          <p class="topMenu-Name">ElloRabyndra</p>
+          <div onclick="hideSidebar()" class="closeBar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </div>
+        </li>
+        <li><a href="#" onclick="hideSidebar()">Home</a></li>
+        <li><a href="#about" onclick="hideSidebar()">About</a></li>
+        <li><a href="#skills" onclick="hideSidebar()">Skills</a></li>
+        <li><a href="#project" onclick="hideSidebar()">Project</a></li>
+        <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+        <div class="line-menu"></div>
+      </nav>
+    </div>
 
-<body>
-  <div class="sidebar">
-    <nav>
-      <li class="topMenu">
-        <p class="topMenu-Name">ElloRabyndra</p>
-        <div onclick=hideSidebar() class="closeBar"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
-            viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
+    <header>
+      <a class="header-nama" href="">ElloRabyndra</a>
+      <nav>
+        <li class="hide"><a href="#">Home</a></li>
+        <li class="hide"><a href="#about">About</a></li>
+        <li class="hide"><a href="#skills">Skills</a></li>
+        <li class="hide"><a href="#project">Project</a></li>
+        <li class="hide"><a href="#contact">Contact</a></li>
+        <li onclick="showSidebar()" class="openBar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="26px"
+            viewBox="0 -960 960 960"
+            width="26px"
+            fill="#e8eaed"
+          >
             <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg></div>
-      </li>
-      <li><a href="#" onclick=hideSidebar()>Home</a></li>
-      <li><a href="#about" onclick=hideSidebar()>About</a></li>
-      <li><a href="#skills" onclick=hideSidebar()>Skills</a></li>
-      <li><a href="#project" onclick=hideSidebar()>Project</a></li>
-      <li><a href="#contact" onclick=hideSidebar()>Contact</a></li>
-      <div class="line-menu"></div>
-    </nav>
-  </div>
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </li>
+      </nav>
+    </header>
 
-  <header>
-    <a class="header-nama" href="">ElloRabyndra</a>
-    <nav>
-      <li class="hide"><a href="#">Home</a></li>
-      <li class="hide"><a href="#about">About</a></li>
-      <li class="hide"><a href="#skills">Skills</a></li>
-      <li class="hide"><a href="#project">Project</a></li>
-      <li class="hide"><a href="#contact">Contact</a></li>
-      <li onclick=showSidebar() class="openBar"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
-          viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
-          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-        </svg></li>
-    </nav>
-  </header>
-
-  <main>
-    <p>Hi There</p>
-    <h1><span>I'm</span> Ello Rabyndra</h1>
-    <figure id="gambar1">
-      <img src="asset/gambar1.png" alt="">
-    </figure>
-    <p>This Is My Portofolio Website</p>
-    <div class="social">
-      <a href="https://wa.me/6281364324016" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-      <a href="https://www.linkedin.com/in/ello-rabyndra/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-      <a href="https://www.instagram.com/ellorabyndra/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-      <a href="https://www.youtube.com/channel/UC-xqwOfXH4Wptedi0OvI1ow" target="_blank"><i
-          class='bx bxl-youtube'></i></a>
-      <a href="https://open.spotify.com/user/31qmkkb6rzl7cf2jqmcb5ukcsbm4?si=17c9fa43912746bd" target="_blank"><i
-          class='bx bxl-spotify'></i></a>
-    </div>
-    <div class="viewMore"><a href="#about">View More</a></div>
-  </main>
-
-  <section id="about">
-    <div class="about-header">
-      <h1>About</h1>
-      <p>Introduction</p>
-    </div>
-    <div class="about-content">
-      <figure id="gambar2">
-        <img src="asset/gambar2.png" alt="">
+    <main>
+      <p>Hi There</p>
+      <h1><span>I'm</span> Ello Rabyndra</h1>
+      <figure id="gambar1">
+        <img src="asset/gambar1.png" alt="" />
       </figure>
-      <div class="introduce">
-        <p>My name is M. Rabyndra Janitra Binello. I am a student at Sriwijaya University, majoring in Informatics
-          Engineering. I have a keen interest in web development and graphic design.</p>
-        <span><i class='bx bxs-user'></i>Ello Rabyndra</span>
-        <span><i class='bx bxs-envelope'></i>ellorabyndra123@gmail.com</span>
-        <span><i class='bx bxs-phone'></i>+62 813 6432 4016</span>
+      <p>This Is My Portofolio Website</p>
+      <div class="social">
+        <a href="https://wa.me/6281364324016" target="_blank"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/ello-rabyndra/" target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://www.instagram.com/ellorabyndra/" target="_blank"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UC-xqwOfXH4Wptedi0OvI1ow"
+          target="_blank"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/user/31qmkkb6rzl7cf2jqmcb5ukcsbm4?si=17c9fa43912746bd"
+          target="_blank"
+          ><i class="bx bxl-spotify"></i
+        ></a>
       </div>
-    </div>
-  </section>
+      <div class="viewMore"><a href="#about">View More</a></div>
+    </main>
 
-  <section id="skills">
-    <div class="skills-header">
-      <h1>Skills</h1>
-      <p>My Skills & Experiences</p>
-    </div>
-
-    <div class="skill-content">
-      <div class="skill-wrapper">
-        <div class="card-skill">
-          <div class="card-skill-logo">
-            <img src="asset/html.png" alt="HTML">
-          </div>
-          <div class="card-skill-tittle">HTML</div>
-        </div>
-        <div class="card-skill">
-          <div class="card-skill-logo">
-            <img src="asset/css.png" alt="">
-          </div>
-          <div class="card-skill-tittle">CSS</div>
-        </div>
-        <div class="card-skill">
-          <div class="card-skill-logo">
-            <img src="asset/javascript.png" alt="Javascript">
-          </div>
-          <div class="card-skill-tittle">Javascript</div>
-        </div>
-        <div class="card-skill">
-          <div class="card-skill-logo">
-            <img src="asset/java.png" alt="Java">
-          </div>
-          <div class="card-skill-tittle">Java</div>
-        </div>
-        <div class="card-skill">
-          <div class="card-skill-logo">
-            <img src="asset/photoshop.png" alt="Adobe Photoshop">
-          </div>
-          <div class="card-skill-tittle">Photoshop</div>
-        </div>
-        <div class="card-skill">
-          <div class="card-skill-logo">
-            <img src="asset/figma.png" alt="Figma">
-          </div>
-          <div class="card-skill-tittle">Figma</div>
+    <section id="about">
+      <div class="about-header">
+        <h1>About</h1>
+        <p>Introduction</p>
+      </div>
+      <div class="about-content">
+        <figure id="gambar2">
+          <img src="asset/gambar2.png" alt="" />
+        </figure>
+        <div class="introduce">
+          <p>
+            My name is M. Rabyndra Janitra Binello. I am a student at Sriwijaya
+            University, majoring in Informatics Engineering. I have a keen
+            interest in web development and graphic design.
+          </p>
+          <span><i class="bx bxs-user"></i>Ello Rabyndra</span>
+          <span><i class="bx bxs-envelope"></i>ellorabyndra123@gmail.com</span>
+          <span><i class="bx bxs-phone"></i>+62 813 6432 4016</span>
         </div>
       </div>
+    </section>
 
-      <div class="experience-wrapper">
-        <div class="card-experience">
-          <div class="card-experience-year">2023</div>
-          <div class="card-experience-details">
-            <div class="card-experience-details-role">Member of Graphic Design Division</div>
-            <div class="card-experience-details-name">Google Developer Student Club Unsri</div>
+    <section id="skills">
+      <div class="skills-header">
+        <h1>Skills</h1>
+        <p>My Skills & Experiences</p>
+      </div>
+
+      <div class="skill-content">
+        <div class="skill-wrapper">
+          <div class="card-skill">
+            <div class="card-skill-logo">
+              <img src="asset/html.png" alt="HTML" />
+            </div>
+            <div class="card-skill-tittle">HTML</div>
+          </div>
+          <div class="card-skill">
+            <div class="card-skill-logo">
+              <img src="asset/css.png" alt="" />
+            </div>
+            <div class="card-skill-tittle">CSS</div>
+          </div>
+          <div class="card-skill">
+            <div class="card-skill-logo">
+              <img src="asset/javascript.png" alt="Javascript" />
+            </div>
+            <div class="card-skill-tittle">Javascript</div>
+          </div>
+          <div class="card-skill">
+            <div class="card-skill-logo">
+              <img src="asset/java.png" alt="Java" />
+            </div>
+            <div class="card-skill-tittle">Java</div>
+          </div>
+          <div class="card-skill">
+            <div class="card-skill-logo">
+              <img src="asset/photoshop.png" alt="Adobe Photoshop" />
+            </div>
+            <div class="card-skill-tittle">Photoshop</div>
+          </div>
+          <div class="card-skill">
+            <div class="card-skill-logo">
+              <img src="asset/figma.png" alt="Figma" />
+            </div>
+            <div class="card-skill-tittle">Figma</div>
           </div>
         </div>
-        <div class="card-experience">
-          <div class="card-experience-year">2024</div>
-          <div class="card-experience-details">
-            <div class="card-experience-details-role">Staff of Information Technology Development</div>
-            <div class="card-experience-details-name">Himpunan Mahasiswa Informatika</div>
+
+        <div class="experience-wrapper">
+          <div class="card-experience">
+            <div class="card-experience-year">2023</div>
+            <div class="card-experience-details">
+              <div class="card-experience-details-role">
+                Member of Graphic Design Division
+              </div>
+              <div class="card-experience-details-name">
+                Google Developer Student Club Unsri
+              </div>
+            </div>
+          </div>
+          <div class="card-experience">
+            <div class="card-experience-year">2024</div>
+            <div class="card-experience-details">
+              <div class="card-experience-details-role">
+                Staff of Information Technology Development
+              </div>
+              <div class="card-experience-details-name">
+                Himpunan Mahasiswa Informatika
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="project">
-    <div class="project-header">
-      <h1>Project</h1>
-      <p>My Recent Project</p>
-    </div>
+    <section id="project">
+      <div class="project-header">
+        <h1>Project</h1>
+        <p>My Recent Project</p>
+      </div>
 
-    <div class="project-content">
-      <a href="https://ellorabyndra.github.io/ElloFirstWeb/" target="_blank" class="card-project"
-        style="background-image: url(asset/firstWeb.jpg);">
-        <div class="viewProject">
-          <div class="viewButton"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+      <div class="project-content">
+        <a
+          href="https://ellorabyndra.github.io/ElloFirstWeb/"
+          target="_blank"
+          class="card-project"
+          style="background-image: url(asset/firstWeb.jpg)"
+        >
+          <div class="viewProject">
+            <div class="viewButton">
+              <i
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+                  /></svg
+              ></i>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://ellorabyndra.github.io/PickCar/"
+          target="_blank"
+          class="card-project"
+          style="background-image: url(asset/pickUrCar.jpg)"
+        >
+          <div class="viewProject">
+            <div class="viewButton">
+              <i
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+                  /></svg
+              ></i>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://ellorabyndra.github.io/ElGallery/"
+          target="_blank"
+          class="card-project"
+          style="background-image: url(asset/elGallery.jpg)"
+        >
+          <div class="viewProject">
+            <div class="viewButton">
+              <i
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+                  /></svg
+              ></i>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://ellorabyndra.github.io/FlipUrCard/"
+          class="card-project"
+          target="_blank"
+          style="background-image: url(asset/flipCard.jpg)"
+        >
+          <div class="viewProject">
+            <div class="viewButton">
+              <i
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+                  /></svg
+              ></i>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://ellorabyndra.github.io/48Gallery/"
+          class="card-project"
+          target="_blank"
+          style="background-image: url(asset/48Gallery.jpg)"
+        >
+          <div class="viewProject">
+            <div class="viewButton">
+              <i
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+                  /></svg
+              ></i>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://ellorabyndra.github.io/RandomColor/"
+          class="card-project"
+          target="_blank"
+          style="background-image: url(asset/randomColor.jpg)"
+        >
+          <div class="viewProject">
+            <div class="viewButton">
+              <i
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+                  /></svg
+              ></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-header">
+        <h1>Contact</h1>
+        <p>Get Contact With Me</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-area">
+          <input type="text" class="input" name="name" placeholder="Name" />
+        </div>
+        <div class="contact-area">
+          <input type="text" class="input" name="email" placeholder="Email" />
+        </div>
+        <div class="contact-area">
+          <textarea
+            name="message"
+            class="message"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="contact-area">
+          <button class="contact-button">
+            <i
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="28px"
+                fill="#e8eaed"
+              >
                 <path
-                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z" />
-              </svg></i></div>
+                  d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
+                /></svg></i
+            >Send
+          </button>
         </div>
-      </a>
-      <a href="https://ellorabyndra.github.io/PickCar/" target="_blank" class="card-project"
-        style="background-image: url(asset/pickUrCar.jpg);">
-        <div class="viewProject">
-          <div class="viewButton"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <path
-                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z" />
-              </svg></i></div>
-        </div>
-      </a>
-      <a href="https://ellorabyndra.github.io/ElGallery/" target="_blank" class="card-project"
-        style="background-image: url(asset/elGallery.jpg);">
-        <div class="viewProject">
-          <div class="viewButton"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <path
-                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z" />
-              </svg></i></div>
-        </div>
-      </a>
-      <a href="https://ellorabyndra.github.io/FlipUrCard/" class="card-project" target="_blank" style="background-image: url(asset/flipCard.jpg);">
-        <div class="viewProject">
-          <div class="viewButton"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <path
-                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z" />
-              </svg></i></div>
-        </div>
-      </a>
-      <a href="https://ellorabyndra.github.io/48Gallery/" class="card-project" target="_blank" style="background-image: url(asset/48Gallery.jpg);">
-        <div class="viewProject">
-          <div class="viewButton"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <path
-                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z" />
-              </svg></i></div>
-        </div>
-      </a>
-      <a href="https://ellorabyndra.github.io/RandomColor/" class="card-project" target="_blank"  style="background-image: url(asset/randomColor.jpg);">
-        <div class="viewProject">
-          <div class="viewButton"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <path
-                  d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z" />
-              </svg></i></div>
-        </div>
-      </a>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="contact">
-    <div class="contact-header">
-      <h1>Contact</h1>
-      <p>Get Contact With Me</p>
-    </div>
-
-    <div class="contact-content">
-      <div class="contact-area">
-        <input type="text" class="input" name="name" placeholder="Name">
+    <footer>
+      <div class="footer social">
+        <a href="https://wa.me/6281364324016" target="_blank"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/ello-rabyndra/" target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://www.instagram.com/ellorabyndra/" target="_blank"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UC-xqwOfXH4Wptedi0OvI1ow"
+          target="_blank"
+          ><i class="bx bxl-youtube"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/user/31qmkkb6rzl7cf2jqmcb5ukcsbm4?si=17c9fa43912746bd"
+          target="_blank"
+          ><i class="bx bxl-spotify"></i
+        ></a>
       </div>
-      <div class="contact-area">
-        <input type="text" class="input" name="email" placeholder="Email">
-      </div>
-      <div class="contact-area">
-        <textarea name="message" class="message" placeholder="Message"></textarea>
-      </div>
-      <div class="contact-area">
-        <button class="contact-button"><i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-              width="28px" fill="#e8eaed">
-              <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
-            </svg></i>Send</button>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer social">
-      <a href="https://wa.me/6281364324016" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-      <a href="https://www.linkedin.com/in/ello-rabyndra/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-      <a href="https://www.instagram.com/ellorabyndra/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-      <a href="https://www.youtube.com/channel/UC-xqwOfXH4Wptedi0OvI1ow" target="_blank"><i
-          class='bx bxl-youtube'></i></a>
-      <a href="https://open.spotify.com/user/31qmkkb6rzl7cf2jqmcb5ukcsbm4?si=17c9fa43912746bd" target="_blank"><i
-          class='bx bxl-spotify'></i></a>
-    </div>
-    <div class="footer-name"><a href="">&copy;Ello Rabyndra</a></div>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+      <div class="footer-name"><a href="">&copy;Ello Rabyndra</a></div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
