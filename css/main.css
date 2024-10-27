@@ -1,22 +1,22 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --mainColor:rgb(62, 62, 62);
+  --mainColor: rgb(62, 62, 62);
 }
 
 /* CSS Style */
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 /* Header Navbar (Main)*/
-header{
+header {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -58,12 +58,12 @@ header nav li a {
 }
 
 header nav li a::after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 1px;
   border-bottom: 1px solid white;
   transform: scalex(0);
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
 header .header-nama:hover {
@@ -87,13 +87,13 @@ header nav .hide {
 .sidebar {
   position: fixed;
   z-index: 9999;
-  top: 0; 
+  top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
   display: none;
   flex-direction: column;
-  background-color: rgba(50, 50, 50, 0.70);
+  background-color: rgba(50, 50, 50, 0.7);
   backdrop-filter: blur(12px);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.505);
   color: white;
@@ -128,7 +128,7 @@ header nav .hide {
 .sidebar nav .topMenu .topMenu-Name {
   cursor: pointer;
   padding: 0em 1.5em;
-  font-weight:600;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -142,7 +142,7 @@ header nav .hide {
 
 .sidebar .line-menu {
   width: 45%;
-  height:1px;
+  height: 1px;
   margin: 15px auto;
   background-color: white;
 }
@@ -189,7 +189,7 @@ main #gambar1 img {
   width: 300px;
 }
 
- .social {
+.social {
   margin: 2em;
   display: flex;
   margin: 0.8em;
@@ -198,13 +198,13 @@ main #gambar1 img {
   gap: 20px;
 }
 
- .social i {
+.social i {
   color: var(--mainColor);
   font-size: 1.8em;
   transition: 0.3s;
 }
 
- .social i:hover {
+.social i:hover {
   color: rgb(88, 88, 88);
   transform: translateY(-5px);
 }
@@ -228,21 +228,33 @@ main .viewMore a:hover {
 }
 
 /* Section Content */
-#about, #skills, #project, #contact {
+#about,
+#skills,
+#project,
+#contact {
   text-align: center;
   color: var(--mainColor);
   padding: 3.5em 1em 0.5em;
 }
 
-#about .about-header, #skills .skills-header, #project .project-header, #contact .contact-header {
+#about .about-header,
+#skills .skills-header,
+#project .project-header,
+#contact .contact-header {
   margin: 10px auto;
 }
 
-#about h1, #skills h1, #project h1, #contact h1 {
+#about h1,
+#skills h1,
+#project h1,
+#contact h1 {
   font-size: 1.6em;
 }
 
-#about p, #skills p, #project p, #contact p{
+#about p,
+#skills p,
+#project p,
+#contact p {
   font-size: 1.1em;
 }
 
@@ -301,20 +313,20 @@ main .viewMore a:hover {
   max-width: 350px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 2em;
   align-content: space-between;
 }
 
 #skills .card-skill {
-  width:  130px;
+  width: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.7em 1.1em 0.2em;
   color: var(--mainColor);
   background-color: rgba(212, 217, 221, 0.3);
-  box-shadow: 0px 1px 3px .2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px 0.2px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   font-weight: 400;
   transition: all 0.3s;
@@ -331,7 +343,7 @@ main .viewMore a:hover {
 
 #skills .card-skill-tittle {
   font-size: 1.1em;
-  }
+}
 
 #skills .experience-wrapper {
   width: 100%;
@@ -395,10 +407,10 @@ main .viewMore a:hover {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-#project .viewProject  {
+#project .viewProject {
   width: 100%;
   height: 100%;
   box-sizing: content-box;
@@ -419,7 +431,7 @@ main .viewMore a:hover {
   background-color: rgb(255, 255, 255);
   opacity: 0.5;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #project .viewProject .viewButton i {
@@ -432,7 +444,7 @@ main .viewMore a:hover {
   transform: translateY(-5px);
 }
 
-#project .card-project:hover .viewProject{
+#project .card-project:hover .viewProject {
   opacity: 1;
 }
 
@@ -455,25 +467,26 @@ main .viewMore a:hover {
   gap: 1.4em;
 }
 
-#contact .contact-content .input, #contact .contact-content .message  {
+#contact .contact-content .input,
+#contact .contact-content .message {
   width: 260px;
   height: 45px;
   padding: 0.2em 0.8em;
   border: 0;
   outline: 0;
   color: var(--mainColor);
-  font-size: .9em;
+  font-size: 0.9em;
   border-radius: 10px;
   background-color: rgba(212, 217, 221, 0.3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   cursor: text;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #contact .contact-content .message {
   resize: none;
   height: 180px;
-  padding: 0.5em 0.4em 0.5em .8em;
+  padding: 0.5em 0.4em 0.5em 0.8em;
 }
 
 #contact .contact-content .contact-button {
@@ -490,7 +503,7 @@ main .viewMore a:hover {
   border-radius: 30px;
   font-size: 1em;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #contact .contact-content .contact-button i {
@@ -508,7 +521,8 @@ main .viewMore a:hover {
   transform: translateY(0);
 }
 
-#contact .contact-content .input:focus-within, #contact .contact-content .message:focus-within {
+#contact .contact-content .input:focus-within,
+#contact .contact-content .message:focus-within {
   background-color: rgba(212, 217, 221, 0.8);
 }
 
@@ -525,7 +539,7 @@ footer {
   font-weight: 550;
   gap: 8px;
 }
- 
+
 .footer.social {
   margin: 0;
 }
@@ -538,7 +552,7 @@ footer .footer-name a {
   display: block;
   color: white;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 footer .footer-name a:hover {
@@ -547,12 +561,16 @@ footer .footer-name a:hover {
 
 /* Animation */
 @keyframes slideIn {
-  from {transform: translate(100%);} 
-  to {transform: translate(0);}
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 
 /* Responsive */
-@media (min-width: 992px) and (max-width:1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   header {
     font-size: 1em;
   }
@@ -564,13 +582,14 @@ footer .footer-name a:hover {
     padding: 0 0 0 1em;
   }
 
-  .header-nama, header nav li a  {
+  .header-nama,
+  header nav li a {
     padding: 1.2em 2em;
   }
 
   header nav {
     display: flex;
-    align-items: center;  
+    align-items: center;
   }
 
   header nav .hide {
@@ -586,7 +605,8 @@ footer .footer-name a:hover {
     font-size: 1.3em;
   }
 
-  main p:nth-child(1), main p:nth-child(4) {
+  main p:nth-child(1),
+  main p:nth-child(4) {
     margin-top: 0.25em;
   }
 
@@ -599,11 +619,14 @@ footer .footer-name a:hover {
   }
 
   /* Section Content */
-  #about, #skills, #project, #contact {
+  #about,
+  #skills,
+  #project,
+  #contact {
     padding: 4.2em 1.6em 0;
     font-size: 1.15em;
   }
-  
+
   /* About */
   .about-content {
     display: flex;
@@ -629,7 +652,7 @@ footer .footer-name a:hover {
     width: 500px;
     margin: 0.5em auto;
   }
-  
+
   #about .introduce span i {
     font-size: 2em;
   }
@@ -668,7 +691,7 @@ footer .footer-name a:hover {
   #skills .card-experience-details-role {
     font-size: 1.05em;
   }
-  
+
   #skills .card-experience-details-name {
     font-size: 0.85em;
   }
@@ -677,7 +700,7 @@ footer .footer-name a:hover {
   #project .project-content {
     padding: 0.6em 1.5em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 330px);
+    grid-template-columns: repeat(3, 330px);
     place-items: center;
     place-content: center;
     gap: 1.5em 2em;
@@ -704,7 +727,7 @@ footer .footer-name a:hover {
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     background-color: #f2f4f5;
     color: white;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   #project .emptyProject .comingSoon {
@@ -720,20 +743,22 @@ footer .footer-name a:hover {
     fill: white;
     width: 50px;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
-  #project .emptyProject:hover, #project .emptyProject:hover svg  {
+  #project .emptyProject:hover,
+  #project .emptyProject:hover svg {
     color: rgb(205, 205, 205);
     fill: rgb(205, 205, 205);
   }
 
   /* Contact */
-  #contact .contact-content .input, #contact .contact-content .message  {
+  #contact .contact-content .input,
+  #contact .contact-content .message {
     width: 450px;
     height: 45px;
   }
-  
+
   #contact .contact-content .message {
     height: 220px;
   }
@@ -747,7 +772,7 @@ footer .footer-name a:hover {
   #contact .contact-content .contact-button i {
     padding: 0;
   }
-  
+
   #contact .contact-content .contact-button svg {
     width: 34px;
     height: 30px;
