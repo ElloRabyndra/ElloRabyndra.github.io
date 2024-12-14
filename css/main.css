@@ -699,8 +699,11 @@ footer .footer-name a:hover {
   /* Project */
   #project .project-content {
     padding: 0.6em 1.5em;
-    display: grid;
-    grid-template-columns: repeat(3, 330px);
+    /* display: grid;
+    grid-template-columns: repeat(3, 330px); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     place-items: center;
     place-content: center;
     gap: 1.5em 2em;
