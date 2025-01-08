@@ -310,7 +310,7 @@ main .viewMore a:hover {
 }
 
 #skills .skill-wrapper {
-  max-width: 350px;
+  max-width: 550px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -319,7 +319,7 @@ main .viewMore a:hover {
 }
 
 #skills .card-skill {
-  width: 130px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,7 +338,7 @@ main .viewMore a:hover {
 }
 
 #skills .card-skill-logo img {
-  width: 90px;
+  width: 70px;
 }
 
 #skills .card-skill-tittle {
@@ -357,34 +357,31 @@ main .viewMore a:hover {
 #skills .card-experience {
   display: flex;
   cursor: pointer;
-  gap: 0.4em;
+  gap: 1em;
 }
 
 #skills .card-experience-year {
   width: 50px;
   margin-top: 1px;
   font-weight: 500;
-  font-size: 0.95em;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 #skills .card-experience-details {
   display: flex;
   flex-direction: column;
   text-align: start;
-  width: 255px;
+  max-width: 300px;
   gap: 0.2em;
 }
 
 #skills .card-experience-details-role {
-  font-size: 0.95em;
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: 400;
 }
 
 #skills .card-experience-details-name {
-  font-size: 0.75em;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 /* Project */
@@ -657,45 +654,6 @@ footer .footer-name a:hover {
     font-size: 2em;
   }
 
-  /* Skills */
-  #skills .skill-content {
-    flex-direction: row;
-    justify-content: center;
-    padding: 2.8em 0;
-  }
-
-  #skills .skill-wrapper {
-    width: auto;
-    max-width: 40%;
-  }
-
-  #skills .experience-wrapper {
-    width: 40%;
-    align-items: stretch;
-  }
-
-  #skills .card-experience {
-    gap: 0;
-  }
-
-  #skills .card-experience-year {
-    margin-top: 3px;
-    width: 25%;
-    font-size: 1.05em;
-  }
-
-  #skills .card-experience-details {
-    width: 75%;
-  }
-
-  #skills .card-experience-details-role {
-    font-size: 1.05em;
-  }
-
-  #skills .card-experience-details-name {
-    font-size: 0.85em;
-  }
-
   /* Project */
   #project .project-content {
     padding: 0.6em 1.5em;
@@ -794,4 +752,46 @@ footer .footer-name a:hover {
   footer .footer-name a {
     font-size: 1.1em;
   }
+}
+
+@media (min-width: 1280px) {
+  /* Skills */
+  #skills .skill-content {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.8em 0;
+  }
+
+  #skills .skill-wrapper {
+    width: auto;
+    max-width: 40%;
+  }
+
+  #skills .experience-wrapper {
+    width: 40%;
+    align-items: stretch;
+  }
+
+  #skills .card-experience {
+    gap: 0;
+  }
+
+  #skills .card-experience-year {
+    margin-top: 3px;
+    width: 25%;
+    font-size: 1.05em;
+  }
+
+  #skills .card-experience-details {
+    width: 75%;
+  }
+
+  #skills .card-experience-details-role {
+    font-size: 1.05em;
+  }
+
+  #skills .card-experience-details-name {
+    font-size: 0.85em;
+  }
+
 }
